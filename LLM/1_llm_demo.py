@@ -5,7 +5,6 @@ from langchain_google_genai import GoogleGenerativeAI
 
 # Load the .env file from the parent directory
 env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
-
 # Try loading with different encodings to handle BOM and other encoding issues
 try:
     load_dotenv(env_path, encoding='utf-8-sig')
